@@ -1,0 +1,9 @@
+{
+    "aps": {
+    	"category": "testCategory",
+        "alert": {
+            "title": "Hello, Notification!",
+            "body": "This notification is pushed through simctl"
+        }
+    }
+}
