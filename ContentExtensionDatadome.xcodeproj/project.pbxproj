@@ -11,7 +11,37 @@
 		DE9562662C2066D10023F499 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9562652C2066D10023F499 /* ContentView.swift */; };
 		DE9562682C2066D30023F499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9562672C2066D30023F499 /* Assets.xcassets */; };
 		DE95626B2C2066D30023F499 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE95626A2C2066D30023F499 /* Preview Assets.xcassets */; };
+		DE9562782C2067080023F499 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9562772C2067080023F499 /* UserNotifications.framework */; };
+		DE95627A2C2067080023F499 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9562792C2067080023F499 /* UserNotificationsUI.framework */; };
+		DE95627D2C2067080023F499 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95627C2C2067080023F499 /* NotificationViewController.swift */; };
+		DE9562802C2067080023F499 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DE95627F2C2067080023F499 /* Base */; };
+		DE9562842C2067080023F499 /* PushContentExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DE9562752C2067080023F499 /* PushContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DE95628C2C206B4A0023F499 /* DataDomeSDK in Frameworks */ = {isa = PBXBuildFile; productRef = DE95628B2C206B4A0023F499 /* DataDomeSDK */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE9562822C2067080023F499 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE9562582C2066D10023F499 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE9562742C2067080023F499;
+			remoteInfo = PushContentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE9562882C2067080023F499 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DE9562842C2067080023F499 /* PushContentExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DE9562602C2066D10023F499 /* ContentExtensionDatadome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContentExtensionDatadome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +49,13 @@
 		DE9562652C2066D10023F499 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE9562672C2066D30023F499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE95626A2C2066D30023F499 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE9562752C2067080023F499 /* PushContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PushContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE9562772C2067080023F499 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		DE9562792C2067080023F499 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		DE95627C2C2067080023F499 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		DE95627F2C2067080023F499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		DE9562812C2067080023F499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE9562892C2069060023F499 /* PushContentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushContentExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +66,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE9562722C2067080023F499 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE95627A2C2067080023F499 /* UserNotificationsUI.framework in Frameworks */,
+				DE9562782C2067080023F499 /* UserNotifications.framework in Frameworks */,
+				DE95628C2C206B4A0023F499 /* DataDomeSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				DE9562622C2066D10023F499 /* ContentExtensionDatadome */,
+				DE95627B2C2067080023F499 /* PushContentExtension */,
+				DE9562762C2067080023F499 /* Frameworks */,
 				DE9562612C2066D10023F499 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				DE9562602C2066D10023F499 /* ContentExtensionDatadome.app */,
+				DE9562752C2067080023F499 /* PushContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +117,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DE9562762C2067080023F499 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE9562772C2067080023F499 /* UserNotifications.framework */,
+				DE9562792C2067080023F499 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE95627B2C2067080023F499 /* PushContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DE9562892C2069060023F499 /* PushContentExtension.entitlements */,
+				DE95627C2C2067080023F499 /* NotificationViewController.swift */,
+				DE95627E2C2067080023F499 /* MainInterface.storyboard */,
+				DE9562812C2067080023F499 /* Info.plist */,
+			);
+			path = PushContentExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +147,37 @@
 				DE95625C2C2066D10023F499 /* Sources */,
 				DE95625D2C2066D10023F499 /* Frameworks */,
 				DE95625E2C2066D10023F499 /* Resources */,
+				DE9562882C2067080023F499 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DE9562832C2067080023F499 /* PBXTargetDependency */,
 			);
 			name = ContentExtensionDatadome;
 			productName = ContentExtensionDatadome;
 			productReference = DE9562602C2066D10023F499 /* ContentExtensionDatadome.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DE9562742C2067080023F499 /* PushContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE9562852C2067080023F499 /* Build configuration list for PBXNativeTarget "PushContentExtension" */;
+			buildPhases = (
+				DE9562712C2067080023F499 /* Sources */,
+				DE9562722C2067080023F499 /* Frameworks */,
+				DE9562732C2067080023F499 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushContentExtension;
+			packageProductDependencies = (
+				DE95628B2C206B4A0023F499 /* DataDomeSDK */,
+			);
+			productName = PushContentExtension;
+			productReference = DE9562752C2067080023F499 /* PushContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +192,9 @@
 					DE95625F2C2066D10023F499 = {
 						CreatedOnToolsVersion = 15.3;
 					};
+					DE9562742C2067080023F499 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = DE95625B2C2066D10023F499 /* Build configuration list for PBXProject "ContentExtensionDatadome" */;
@@ -111,11 +206,15 @@
 				Base,
 			);
 			mainGroup = DE9562572C2066D10023F499;
+			packageReferences = (
+				DE95628A2C206B370023F499 /* XCRemoteSwiftPackageReference "datadome-ios-package" */,
+			);
 			productRefGroup = DE9562612C2066D10023F499 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				DE95625F2C2066D10023F499 /* ContentExtensionDatadome */,
+				DE9562742C2067080023F499 /* PushContentExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +226,14 @@
 			files = (
 				DE95626B2C2066D30023F499 /* Preview Assets.xcassets in Resources */,
 				DE9562682C2066D30023F499 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9562732C2067080023F499 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9562802C2067080023F499 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +249,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE9562712C2067080023F499 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE95627D2C2067080023F499 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE9562832C2067080023F499 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE9562742C2067080023F499 /* PushContentExtension */;
+			targetProxy = DE9562822C2067080023F499 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE95627E2C2067080023F499 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE95627F2C2067080023F499 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DE95626C2C2066D30023F499 /* Debug */ = {
@@ -267,6 +401,7 @@
 		DE95626F2C2066D30023F499 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +430,7 @@
 		DE9562702C2066D30023F499 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +450,56 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.nyberg.ContentExtensionDatadome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE9562862C2067080023F499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PushContentExtension/PushContentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PushContentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PushContentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.nyberg.ContentExtensionDatadome.PushContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE9562872C2067080023F499 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PushContentExtension/PushContentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PushContentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PushContentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.nyberg.ContentExtensionDatadome.PushContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,7 +527,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		DE9562852C2067080023F499 /* Build configuration list for PBXNativeTarget "PushContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE9562862C2067080023F499 /* Debug */,
+				DE9562872C2067080023F499 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE95628A2C206B370023F499 /* XCRemoteSwiftPackageReference "datadome-ios-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DataDome/datadome-ios-package";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE95628B2C206B4A0023F499 /* DataDomeSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE95628A2C206B370023F499 /* XCRemoteSwiftPackageReference "datadome-ios-package" */;
+			productName = DataDomeSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE9562582C2066D10023F499 /* Project object */;
 }

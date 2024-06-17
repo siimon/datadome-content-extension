@@ -1,0 +1,15 @@
+{
+  "originHash" : "bb7482d85f4f9a841379fee390fd4db8d6781722159f92cd499dfa1c29b8a4f2",
+  "pins" : [
+    {
+      "identity" : "datadome-ios-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DataDome/datadome-ios-package",
+      "state" : {
+        "revision" : "0b8b6d0d1a6da88277f4a8af1fdded029e3113b7",
+        "version" : "3.5.2"
+      }
+    }
+  ],
+  "version" : 3
+}
